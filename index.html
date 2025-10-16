@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nikhil Kumar Singh Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+ .pawn {
+    color: #ffbd39;        /* default gold color */
+    font-size: 40px;
+    transition: color 0.3s ease; /* smooth color change */
+    cursor: pointer;       /* show pointer on hover */
+  }
+
+  .pawn:hover {
+    color: white;           /* turn white on hover */
+  }
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Nikhil Kumar Singh</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+			  <li class="nav-item"><a href="#certificate-section" class="nav-link"><span>Certifications</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg7.png);  background-position: 110% -150px; 
+            background-repeat: no-repeat;
+            background-size: contain;">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Nikhil Kumar Singh</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Engineer  ',
+						'Tutor',
+						'Chess Player  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2> Data Analyst</h2>
+						<h5>
+							Where there is data smoke, there is business fire.
+						</h5>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <!-- <p><a href="https://www.youtube.com/@RishabhMishraOfficial" class="btn btn-primary py-3 px-4">YouTube</a> 
+							<a href="https://github.com/rishabhnmishra" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p> -->
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-mee.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Nikhil Kumar Singh</span></p>
+										<!-- <p><span class="title-s">Job Role: </span> <span> Data Analyst</span></p> -->
+										<!-- <p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> -->
+										<p><span class="title-s">Address: </span> <span>Delhi, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I'm a passionate Data Analyst with a strong foundation in Python, SQL, and Business Intelligence tools. I specialize in extracting meaningful patterns from complex datasets and presenting them through compelling visualizations. With expertise in data cleaning, exploratory data analysis (EDA), and statistical modeling, I help organizations make data-driven decisions.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology in Computer Science And Engineering.</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Chess </span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="10">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<!-- <p><a href="https://www.linkedin.com/in/rishabhnmishra/" class="btn btn-primary py-3 px-3">LinkedIn</a></p> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+	<!-- <section id="certificate-section" class="certificates-section" style="padding:50px 0; background:hwb(0 0% 99%);">
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:40px;">Certificates</h2>
+    
+    <div class="certificates-grid" style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
+      
+       Certificate 1 -->
+      <!-- <div class="certificate-item" style="width:220px; text-align:center; border:1px solid #ccc; border-radius:8px; overflow:hidden; background:#f9f9f9;">
+        <a href="https://coursera.org/share/747207501023744dd17b066e1b7569b4" target="_blank">
+          <img src="images\Machine_Learning1.png" alt="Certificate 1" style="width:100%; height:auto;">
+        </a>
+        <p style="padding:10px; font-weight:bold;">Machine Learning for All – University of London</p>
+      </div> -->
+
+      <!-- Certificate 2 -->
+      <!-- <div class="certificate-item" style="width:220px; text-align:center; border:1px solid #ccc; border-radius:8px; overflow:hidden; background:#f9f9f9;">
+        <a href="files/certificate2.pdf" target="_blank">
+          <img src="images/certificate2.png" alt="Certificate 2" style="width:100%; height:auto;">
+        </a>
+        <p style="padding:10px; font-weight:bold;">Certified Google Data Analyst</p>
+      </div> -->
+
+      <!-- Certificate 3 -->
+      <!-- <div class="certificate-item" style="width:220px; text-align:center; border:1px solid #ccc; border-radius:8px; overflow:hidden; background:#f9f9f9;">
+        <a href="files/certificate3.pdf" target="_blank">
+          <img src="images/certificate3.png" alt="Certificate 3" style="width:100%; height:auto;">
+        </a>
+        <p style="padding:10px; font-weight:bold;">GenAI in Data Analytics – Meta</p>
+      </div> -->
+
+      <!-- Certificate 4 -->
+      <!-- <div class="certificate-item" style="width:220px; text-align:center; border:1px solid #ccc; border-radius:8px; overflow:hidden; background:#f9f9f9;">
+        <a href="files/certificate4.pdf" target="_blank">
+          <img src="images/certificate4.png" alt="Certificate 4" style="width:100%; height:auto;">
+        </a>
+        <p style="padding:10px; font-weight:bold;">Data Visualization using Microsoft Excel</p>
+      </div> -->
+
+      <!-- Certificate 5 -->
+      <!-- <div class="certificate-item" style="width:220px; text-align:center; border:1px solid #ccc; border-radius:8px; overflow:hidden; background:#f9f9f9;">
+        <a href="files/certificate5.pdf" target="_blank">
+          <img src="images/certificate5.png" alt="Certificate 5" style="width:100%; height:auto;">
+        </a>
+        <p style="padding:10px; font-weight:bold;">Mastering DSA using C and C++</p>
+      </div>
+
+    </div>
+  </div>
+</section>  -->
+<section id="certificate-section" class="certificates-section" style="padding:50px 0; background:#070000;">
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:40px;"><b>Certificates</b></h2>
+
+    <div class="certificates-grid" style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
+
+      <!-- Certificate Item -->
+      <div class="certificate-item" style="width:300px; text-align:center; border:1px solid #cccccc; border-radius:8px; overflow:hidden; background:#ffbd39;">
+        <img src="images\Machine_Learning.jpeg" alt="Certificate 1" class="certificate-img" style="width:100%; height:auto; cursor:pointer;">
+	
+        <p style="padding:10px; font-weight:bold;">
+          <a href="https://coursera.org/share/747207501023744dd17b066e1b7569b4" target="_blank" style="text-decoration:none; color:#333;">Machine Learning for All – University of London</a>
+        </p>
+      </div>
+
+      <div class="certificate-item" style="width:300px; text-align:center; border:1px solid #ccc; border-radius:8px; overflow:hidden; background:#ffbd39;">
+        <img src="images\CERTIFICATE_LANDING_PAGE~CEVO6K9CD4LQ.jpeg" alt="Certificate 2" class="certificate-img" style="width:100%; height:auto; cursor:pointer;">
+        <p style="padding:10px; font-weight:bold;">
+          <a href="https://coursera.org/share/65899e022421146690ea2bf9cb2339ab" target="_blank" style="text-decoration:none; color:#333;">Certified Google Data Analyst</a>
+        </p>
+      </div>
+
+      <div class="certificate-item" style="width:300px; text-align:center; border:1px solid #ccc; border-radius:8px; overflow:hidden; background:#ffbd39;">
+        <img src="images\Gen_AI.jpeg" alt="Certificate 3" class="certificate-img" style="width:100%; height:auto; cursor:pointer;">
+        <p style="padding:10px; font-weight:bold;">
+          <a href="https://coursera.org/share/5ed8ac72ab07814ee3458b6bae536410" target="_blank" style="text-decoration:none; color:#333;">GenAI in Data Analytics – Meta</a>
+        </p>
+      </div>
+
+	  
+
+      <div class="certificate-item" style="width:300px; text-align:center; border:1px solid #ccc; border-radius:8px; overflow:hidden; background:#ffbd39;">
+        <img src="images\Data_Visualization_using_Excel.jpeg" alt="Certificate 4" class="certificate-img" style="width:100%; height:auto; cursor:pointer;">
+        <p style="padding:10px; font-weight:bold;">
+          <a href="https://coursera.org/share/26efec2566699f9297c56ac88fd4d8cb" target="_blank" style="text-decoration:none; color:#333;">Data Visualization using Microsoft Excel</a>
+        </p>
+      </div>
+
+      <div class="certificate-item" style="width:300px; text-align:center; border:1px solid #ccc; border-radius:8px; overflow:hidden; background:#ffbd39;">
+        <img src="images\DSA.jpg" alt="Certificate 5" class="certificate-img" style="width:100%; height:auto; cursor:pointer;">
+        <p style="padding:10px; font-weight:bold;">
+          <a href="https://www.udemy.com/certificate/UC-a4b8942b-81d7-4df5-86aa-7b6cb89f6857/" target="_blank" style="text-decoration:none; color:#333;">Mastering DSA using C and C++</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Popup Modal -->
+  <div id="imgModal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); text-align:center;">
+    <span id="closeModal" style="position:absolute; top:20px; right:40px; color:white; font-size:35px; font-weight:bold; cursor:pointer;">&times;</span>
+    <img id="modalImage" style="margin-top:60px; max-width:90%; max-height:80%;">
+  </div>
+
+  <script>
+    // Get modal elements
+    const modal = document.getElementById('imgModal');
+    const modalImg = document.getElementById('modalImage');
+    const closeModal = document.getElementById('closeModal');
+
+    // When an image is clicked
+    document.querySelectorAll('.certificate-img').forEach(img => {
+      img.addEventListener('click', function() {
+        modal.style.display = 'block';
+        modalImg.src = this.src;
+      });
+    });
+
+    // Close the modal
+    closeModal.onclick = function() {
+      modal.style.display = 'none';
+    };
+
+    // Close when clicking outside the image
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    };
+  </script>
+</section>
+
+<section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://gurguramrealestate.streamlit.app/" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/real.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/nikhilthedatadetective-commits/Gurugram_Real_Estate_data_Training" target="_blank">Gurugram City Real Estate Price Analysis & Prediction</a></h3>
+                <p>Analyzed Gurugram City real estate data using Python to identify key price factors and built a model to accurately predict property prices.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/nikhilthedatadetective-commits/Diwali_Sales_Analysis " target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/nikhilthedatadetective-commits/Diwali_Sales_Analysis" target="_blank">Data Analysis using Python Project for Beginners</a></h3>
+                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/nikhilthedatadetective-commits/Sales-Insight-Using-Power-BI-Dashboard"  target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/nikhilthedatadetective-commits/Sales-Insight-Using-Power-BI-Dashboard" target="_blank" >Power BI Sales dashboard Project </a></h3>
+                <p>Designed a power bi dashboard for AtliQ Hardware to track and analyze the online sales data acorss India.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/nikhilthedatadetective-commits/Spotify-Dataset-Analysis-using-MySQL" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_4.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/nikhilthedatadetective-commits/Spotify-Dataset-Analysis-using-MySQL"  target="_blank" >Spotify Dataset Analysis Using MySQL</a></h3>
+				  <p>Optimized and analyzed 50K+ Spotify records using SQL to extract key insights on top tracks, artists, and trends through efficient schema design and advanced queries.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/nikhilthedatadetective-commits/OLA_Dashboard" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/nikhilthedatadetective-commits/OLA_Dashboard" target="_blank" >OLA Performance Analytics</a></h3>
+				  <p>Analyzed 90K+ Ola ride records using SQL and Power BI to uncover trends, customer insights, and key performance metrics for data-driven decision-making.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+
+
+<section class="ftco-section ftco-no-pb" id="resume-section">
+  <div class="container">
+    <h2>My Resume</h2>
+    
+    
+    <iframe src="Nikhil_DATA_ANALYST.pdf#view=FitH" 
+             style="width:100%; height:600px; border:1px solid #ccc;" 
+            title="Resume"></iframe>
+    
+    <br><br> 
+    
+    
+     <a href="Nikhil_DATA_ANALYST.pdf" target="_blank" download 
+        class="btn btn-primary" 
+       style="padding:10px 20px; text-decoration:none; color:white; border-radius:5px;">
+      Download Resume
+    </a>
+  </div>
+</section> 
+
+
+
+
+<!-- <section class="ftco-section ftco-no-pb" id="resume-section">
+  <div class="container text-center">
+    <h2>My Resume</h2>
+
+     Thumbnail Image -->
+    <!-- <img src="images/Resume.jpg" alt="My Resume" id="resumeImg"
+         style="width:700px; border-radius:10px; cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,0.2); transition:0.3s;">
+    
+    <br><br> -->
+
+    <!-- Download Button -->
+    <!-- <a href="Nikhil_DATA_ANALYST.pdf" target="_blank" download 
+       class="btn btn-primary" 
+       style="padding:10px 20px; text-decoration:none; color:white; border-radius:5px;">
+      Download Resume
+    </a>
+  </div>
+</section> --> 
+
+<!-- Fullscreen Modal -->
+<!-- Fullscreen Modal (for Resume only) -->
+<!-- <div id="resumeModalBox" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.9);">
+  <span id="closeResumeModal" style="position:absolute; top:20px; right:40px; color:#fff; font-size:40px; cursor:pointer;">&times;</span>
+  <iframe src="images/Resume.jpg" 
+          style="width:80%; height:90%; margin:40px auto; display:block; border:none; border-radius:10px;"></iframe>
+</div>
+
+<script>
+  // Unique variables for Resume modal
+  const resumeModal = document.getElementById("resumeModalBox");
+  const resumeImg = document.getElementById("resumeImg");
+  const resumeClose = document.getElementById("closeResumeModal");
+
+  resumeImg.onclick = () => resumeModal.style.display = "block";
+  resumeClose.onclick = () => resumeModal.style.display = "none";
+  window.addEventListener("click", e => {
+    if (e.target === resumeModal) resumeModal.style.display = "none"; -->
+  <!-- });
+</script> -->
+
+
+
+
+	
+    <!-- <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-Present</span>
+						<h2>Senior Data Analyst</h2>
+						<span class="position">Merkle</span>
+						<p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International. 
+							<ul>
+								<li>Analysed ad campaigns, clickstream, and customer surveys data, identified an increasing demand and launched a strategic product line.</li>
+								<li>Developed time series forecasting models to predict sales and optimize marketing budgets, got model performance of 92%.</li>
+								<li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2018-2021</span>
+						<h2>Senior Data Analyst</h2>
+						<span class="position">iQuanti</span>
+						<p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. 
+							<ul>
+								<li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li>
+								<li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
+								<li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2014-2018</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Visvesvaraya Technological University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2012-2013</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Army Public School</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section> -->
+
+   
+
+    
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <!-- <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	 -->
+	  <!-- <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			 <div class="container"> -->
+				<!-- <div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/rishabhnmishra" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div> -->
+			<!-- </div> -->
+		<!-- </div> --> 
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Delhi, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a>+91 8178345333</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a >nikhil.thedatadetective@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="Nikhil_DATA_ANALYST.pdf" target="_blank">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <style>
+ 
+</style>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/eXvEk5HLS6Q5DEvL9" target="_blank" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/nikhil-kumar-singh-a3b2731aa/" target="_blank"><span class="icon-linkedin"></span></a></li> 
+					  <li class="ftco-animate">
+  <a href="https://github.com/nikhilthedatadetective-commits" target="_blank">
+    <span class="fab fa-github"></span>
+  </a>
+</li>
+
+					  <li class="ftco-animate"><a href="https://www.chess.com/member/queen_conqueror0" target="_blank"><span class="pawn">♟</span></a></li> 
+					  <!-- <li class="ftco-animate"><a href="https://www.chess.com/member/your-username" target="_blank"><span style="color:#ffbd39; font-size:40px;">♟</span>
+</a></li>  -->
+					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li> -->
+					  
+					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li> -->
+				      <li class="ftco-animate"><a href="https://www.instagram.com/nikhilkumarsingh__?igsh=eHN5M3cwbWVkd2s1" target="_blank"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <!-- <p>Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	<p><b>End of the page, not the end of possibilities.
+Let’s make something awesome together 💡</b></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
